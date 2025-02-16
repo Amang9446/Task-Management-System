@@ -9,7 +9,6 @@ export const useAuthHandler = () => {
   const navigate = useNavigate();
 
   const handleUnauthorized = useCallback(() => {
-    console.log("Unauthorized access detected");
     setUser(null);
     navigate("/login");
     toast.error("Session expired. Please login again.");
